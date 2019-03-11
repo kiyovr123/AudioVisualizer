@@ -9,7 +9,7 @@ public class AudioAnalizer : MonoBehaviour
 	[SerializeField]
 	private float _Power;
 	[SerializeField]
-	private Material _Mat;
+	private Material[] _Mat;
 	[SerializeField]
 	private float _N;
 
@@ -26,7 +26,7 @@ public class AudioAnalizer : MonoBehaviour
 	{
 		AnalizeAudioSource();
 	}
-
+	
 	public void AnalizeAudioSource()
 	{
 		_Power = 0;
@@ -36,7 +36,13 @@ public class AudioAnalizer : MonoBehaviour
 		{
 			_Power += _Spectrum[i];
 		}
-		_Mat.SetFloat("_Scale", _Power * _N);
-		_Mat.SetFloat("_Power",Mathf.Pow(_Power,2));
+		//_Power=_Power/_AudioSource.volume;
+
+		_Mat[0].SetFloat("_Scale", _Power * _N);
+		_Mat[0].SetFloat("_Power",Mathf.Pow(_Power,5));
+
+		_Mat[1].SetFloat("_Scale", _Power * _N);
+		_Mat[1].SetFloat("_Power", Mathf.Pow(_Power, 5));
+
 	}
 }
