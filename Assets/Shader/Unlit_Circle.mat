@@ -24,11 +24,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _Power: 0.00000007632847
-    - _Scale: 0.018858507
-    - _Thick: 0.15
+    - _Power: 0.000005367342
+    - _Scale: 0.0882982
+    - _Thick: 0.06
     m_Colors:
     - _Color: {r: 0, g: 0.74905896, b: 1, a: 0}
     - _ColorA: {r: 1, g: 1, b: 1, a: 0}
     - _ColorB: {r: 0.9056604, g: 0.9056604, b: 0.9056604, a: 0}
-    - _ColorC: {r: 0, g: 0.08270245, b: 0.3679245, a: 0}
+    - _ColorC: {r: 0.7346583, g: 0.033018887, b: 1, a: 0}

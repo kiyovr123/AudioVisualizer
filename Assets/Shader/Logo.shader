@@ -116,8 +116,8 @@
 
 				float2 r = float2(0.,0.);
 
-				r.x = fbm(st + (4.*q) + float2(1.9, 9.2) + (0.5*_Time.y));
-				r.y = fbm(st + (4.*q) + float2(8.3, 2.8) + (0.7*_Time.y));
+				r.x = fbm(st + (4.*q) + float2(1.9, 9.2) + (0.2*_Time));
+				r.y = fbm(st + (4.*q) + float2(8.3, 2.8) + (0.2*_Time));
 
 				float f = fbm(st + 4.*r);
 
