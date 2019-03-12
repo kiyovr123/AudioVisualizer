@@ -42,7 +42,7 @@ public class AudioAnalizer : MonoBehaviour
 		_Mat[0].SetFloat("_Scale", _Power);
 		_Mat[0].SetFloat("_Power", Mathf.Pow(_Power, 5));
 
-		_Mat[1].SetFloat("_Scale", _Power);
+		//_Mat[1].SetFloat("_Scale", _Power);
 		_Mat[1].SetFloat("_Power", Mathf.Pow(_Power, 5));
 
 	}

@@ -70,7 +70,7 @@
 
 				for (int i = 0; i < 5; i++)
 				{
-					result += amplitude * noise(p);
+					result += amplitude *abs( noise(p));
 					amplitude *= 0.5;
 					p *= 2.;
 				}
